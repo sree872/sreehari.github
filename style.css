@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* About Me Section */
+.about {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    margin: 20px;
+}
+
+.skills button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.skills button:hover {
+    background-color: #45a049;
+}
+
+/* Projects Section */
+.projects {
+    text-align: center;
+    margin: 20px;
+}
+
+.projects button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.projects button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
