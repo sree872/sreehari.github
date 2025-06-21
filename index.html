@@ -1,130 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sreehari Rajeesh K</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-    }
-    header {
-      background: #4CAF50;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px;
-      text-align: center;
-    }
-    .skills button {
-      margin: 10px;
-      padding: 10px 20px;
-      background: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-    .project button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-    form {
-      margin-top: 20px;
-    }
-    input[type="text"], input[type="email"] {
-      padding: 10px;
-      width: 250px;
-      margin: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .send-btn {
-      background: #4CAF50;
-      color: white;
-      padding: 10px 30px;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    footer a {
-      color: #4CAF50;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Assist - AI Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-
-<header>
-  <h1>Sreehari Rajeesh K</h1>
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! My name is Sreehari Rajeesh K, currently studying Artificial Intelligence and Data Science at Vimal Jyothi Engineering College, Chemperi, Kannur. I love learning coding through online platforms like YouTube.</p>
-</section>
-
-<section id="skills">
-  <h2>Skills and Expertise</h2>
-  <div class="skills">
-    <button>Python</button>
-    <button>Problem Solving</button>
-    <button>HTML</button>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <p>Portfolio Website - A personal site to showcase my work and passions</p>
-  <div class="project">
-    <button>View Project</button>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:sreeharikuduvan@gmail.com">sreeharikuduvan@gmail.com</a></p>
-  <p>Phone: <a href="tel:‪+917306575423‬">‪+91 7306575423‬</a></p>
-  <h3>OR</h3>
-  
-  <form>
-    <input type="text" name="name" placeholder="Name" required><br>
-    <input type="email" name="email" placeholder="Email" required><br>
-    <button class="send-btn" type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>Connect with me on <a href="#">LinkedIn</a> or <a href="#">GitHub</a>.</p>
-</footer>
-
+    <div class="container">
+        <h1>🤖 Assist - Your AI Agent</h1>
+        <form method="POST">
+            <input type="text" name="message" placeholder="Ask me something..." required>
+            <button type="submit">Send</button>
+        </form>
+        {% if response %}
+            <div class="response">
+                <strong>Assist:</strong> {{ response }}
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
