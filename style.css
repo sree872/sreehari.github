@@ -1,126 +1,70 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f5f9;
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
-/* Header */
-header {
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    padding: 20px;
+.container {
+    margin-top: 50px;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+h1 {
+    color: #2b6777;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Navigation */
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section Titles */
-h2 {
-    color: #4CAF50;
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* About Me Section */
-.about {
-    text-align: center;
-    margin: 20px;
-}
-
-/* Skills Section */
-.skills {
-    text-align: center;
-    margin: 20px;
-}
-
-.skills button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.skills button:hover {
-    background-color: #45a049;
-}
-
-/* Projects Section */
-.projects {
-    text-align: center;
-    margin: 20px;
-}
-
-.projects button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.projects button:hover {
-    background-color: #45a049;
-}
-
-/* Contact Section */
-.contact {
-    text-align: center;
-    margin: 40px 20px;
-}
-
-.contact input[type="text"],
-.contact input[type="email"] {
-    width: 300px;
-    padding: 10px;
-    margin: 10px 0;
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
 }
 
-.contact button {
-    background-color: #4CAF50;
+input[type="text"]:focus {
+    border-color: #2b6777;
+    box-shadow: 0 0 5px rgba(43, 103, 119, 0.2);
+}
+
+button {
+    background-color: #2b6777;
     color: white;
-    padding: 10px 30px;
+    padding: 10px;
     border: none;
-    border-radius: 25px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.contact button:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #1f4c5c;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+.response {
+    margin-top: 20px;
     padding: 15px;
-    margin-top: 40px;
-}
-
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    background: #eaf6f6;
+    border-left: 4px solid #2b6777;
+    border-radius: 6px;
+    font-size: 15px;
+    white-space: pre-wrap;
 }
